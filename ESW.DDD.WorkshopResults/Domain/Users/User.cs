@@ -1,4 +1,5 @@
-﻿using ESW.DDD.WorkshopResults.Domain.Common.Abstractions;
+﻿using ESW.DDD.WorkshopResults.Domain.Common;
+using ESW.DDD.WorkshopResults.Domain.Common.Abstractions;
 
 namespace ESW.DDD.WorkshopResults.Domain.Users;
 

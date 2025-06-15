@@ -52,7 +52,7 @@ internal class Interview : IAggregateRoot
     public DateRange Slot { get; private set; }
     public IEnumerable<UserId> InterviewerIds { get; }
     public InterviewStatus Status { get; private set; }
-    private List<Evaluation> _evaluations;
+    private readonly List<Evaluation> _evaluations;
     public IReadOnlyCollection<Evaluation> Evaluations => _evaluations.AsReadOnly();
 
     public void AddEvaluation(Evaluation newEvaluation)

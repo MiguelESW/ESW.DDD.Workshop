@@ -12,9 +12,10 @@ internal record Evaluation : IValueObject
     {
         if (score < 0 || score > 100)
         {
-            throw new ArgumentOutOfRangeException(nameof(score), "Score must be between 0 and 10.");
+            throw new ArgumentOutOfRangeException(nameof(score),
+                "Score must be between 0 and 10.");
         }
-        ArgumentException.ThrowIfNullOrWhiteSpace(comments, nameof(comments));
+        ArgumentException.ThrowIfNullOrWhiteSpace(comments);
 
         return new(
             interviewerId: interviewerId,
